@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Round: <span id="round">0</span></h2>
+
+    <div class="game-container">
+      <div class="game-board">
+        <div class="button green" data-color="green"></div>
+        <div class="button red" data-color="red"></div>
+        <div class="button yellow" data-color="yellow"></div>
+        <div class="button blue" data-color="blue"></div>
+        <div class="center-circle">
+          <h1>Simon</h1>
+          <button class="start-btn">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="game-over-window" style="display: none">
+      <h2>Game Over!</h2>
+      <p>You reached round <span class="final-score"></span></p>
+      <button class="play-again-btn">Play Again</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
